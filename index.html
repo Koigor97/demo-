@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now....</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top-container">
+        <header>
+          <a href="#">FujiFilm xT2</a>
+        </header>
+
+        <h1><span>The Whole New</span>Street Experience</h1>
+
+        <p>
+          Photography has never been so minimalistic and classic. With the xT2,
+          you will get the retro classic body look from the 90s famous for
+          Fujifilm cameras, but with a soul filled with the latest modern camera
+          technology to bring your imagination to reality.
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-sibling1">
+              <label for="City">Enter your city</label>
+              <input type="text" name="city" id="City" />
+              <p>Example: "Cape Town"</p>
+            </div>
+
+            <input type="button" value="Find Snap-Spots now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="escape">
+      <div class="right-col">
+        <h2>An Escape</h2>
+        <p>
+          When you hold Fujifilm xT2 in your hands, it gives you that escape
+          into the world feeling. You just want to go out there and take
+          incredible photos with it, letting your imagination run wild. The xT2
+          is built for that. With it light weight and small size ergonomics, it
+          makes this camera very easy to take with you anywhere you want to go,
+          making the ideal camera for Travel Vloggers and Street Photographers.
+          However, it is also suitable for Wedding Photographers, and for Studio
+          shoot.
+        </p>
+      </div>
+      <img src="images/book vendor.jpg" alt="image of book vendor" />
+    </section>
+
+    <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
+
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate.overlay");
+      });
+    </script>
+  </body>
+</html>
